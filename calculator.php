@@ -5,15 +5,15 @@
 class Calculator {
     public $result = 0;
     //method adding a number to the result
-    public function plus(integer $var){
+    public function plus($var){
          return $this->result = $this->result + $var;
     }
     //minus a number
-    public function minus(integer $var){
+    public function minus($var){
          return $this->result = $this->result - $var;
     }
     //division method
-    public function division(integer $digit){
+    public function division($digit){
           if($this->result != 0){
              return $this->result = $this->result / $digit;
           }else{
@@ -21,11 +21,11 @@ class Calculator {
          }
     }
     //multiplication method
-    public function multiplication(integer $var){
+    public function multiplication($var){
          return $this->result = $this->result * $var;
     }
     //round method
-    public function round(integer $var){
+    public function round($var){
         if($this->result != 0){
             return $this->result = round($var);
         }else{
